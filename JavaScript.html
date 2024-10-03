@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function mostrar() {
+            document.getElementById('informacion').innerHTML = "Hola quee tal"
+        };
+        function Ocultar() {
+            document.getElementById('informacion').innerHTML = ""
+        }
+        function LeoRonaldo() {
+            document.getElementById('Imagen').src ="messi y ronaldo.png"
+        }
+        function Leorobando() {
+            document.getElementById('Imagen').src ="leo y su primo beso.jpg"
+        }
+    </script>
+</head>
+<body>
+    <h1>Javascript</h1>
+    <h2>Alerts</h2>
+    <p>Al hacer click en el enlace se abre un pop up</p>
+    <a href="javascript:alert('Mondongo')">Click aqui al texto que va adentro</a>
+    <p>al hacer click hacwmosfuncion</p>
+    <button onclick="alert('Haz hecho click maricon')">haz hecho click</button>
+    <h2>Cambiarcontendio de la pagina</h2>
+    <p id="informacion"></p>
+    <button onclick="mostrar()">Muestra informacion</button>
+    <button onclick="Ocultar()">Oculta información</button>
+    <h2>Abrir ventana nueva</h2>
+    <p>Para ir a youtube haz click <a href="JavaScript:window.open('https://www.youtube.com/?gl=ES&hl=es&app=desktop')">aqui</a></p>
+    <h2>Cambiar imagen</h2>
+    <button onclick="LeoRonaldo()">LeoRonaldo</button>
+    <button onclick="Leorobando()">Leorobando</button>
+    <img id="Imagen"src="messi y ronaldo.png" alt="">
+</body>
+</html>
